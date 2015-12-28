@@ -1,0 +1,50 @@
+{
+  "name": "webpack-react-hmr-examples",
+  "version": "0.1.0",
+  "description": "Sample Webpack React HMR setup with Babel 6",
+  "scripts": {
+    "webpack-dev": "webpack-dev-server --inline --hot --content-base public",
+    "webpack-dev-preset": "webpack-dev-server --inline --hot --content-base public --config webpack.config.preset.js",
+    "express": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jugend/wepback-react-hmr-examples"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "hot-module",
+    "hmr",
+    "babel",
+    "react-transform",
+    "express",
+    "webpack-middleware"
+  ],
+  "author": "Herryanto Siatono <herryanto@gmail.com> (http://github.com/jugend)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-react-hmre": "^1.0.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "body-parser": "^1.14.2",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.3",
+    "file-loader": "^0.8.5",
+    "react-transform-catch-errors": "^1.0.1",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.2.0",
+    "webpack": "^1.12.9",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-hot-middleware": "^2.6.0"
+  },
+  "dependencies": {
+    "babel-loader": "^6.2.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
