@@ -33,7 +33,6 @@
     "body-parser": "^1.14.2",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
-    "file-loader": "^0.8.5",
     "react-transform-catch-errors": "^1.0.1",
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.2.0",
