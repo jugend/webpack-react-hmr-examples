@@ -5,7 +5,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 3000));
 
-app.use('/', express.static(path.join(__dirname, 'dist')));
+app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -24,10 +24,6 @@ app.use(webpackDev(webpackCompiler, {
 }));
 
 app.use(webpackHot(webpackCompiler));
-
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
 
 // Server
 app.listen(app.get('port'), 'localhost', function(err) {
